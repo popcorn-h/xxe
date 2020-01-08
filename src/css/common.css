@@ -1,0 +1,201 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+	color: #fafafa;
+}
+body{
+font-family: "微软雅黑";
+background-size: 100%;
+background: #0f131f url('../img/bg.jpg') no-repeat 0 0;
+background-size: 100%;
+}
+ul,ol{
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.color-w{
+	color: #FFFFFF;
+}
+.line-heigth{
+	line-height: 30px;
+}
+.pointer{
+	cursor:pointer;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	
+}
+.flexb{
+	display: flex;
+	justify-content: space-between;
+}
+.margin0{
+	margin: 0 !important;
+}
+.borderNone-top{
+	border-top: none !important;
+}
+.borderNone-bottom{
+	border-bottom: none !important;
+}
+.borderNone-left{
+	border-left: none !important;
+}
+h6{
+	margin: 0;
+	padding: 0;
+}
+table{
+	border: 0px solid transparent;
+	border: none;
+	
+}
+table td{
+	border: 0px solid transparent;
+	border: none !important;
+	
+}
+th{
+	text-align: center;
+	font-weight: normal;
+	border: 0px solid transparent;
+	border: none !important;
+	border: 0;
+}
+.text-overhide{
+	overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+        color: #fff;
+         /* placeholder字体大小  */
+         font-size: 12px;
+        /* placeholder位置  */
+        text-align: left;
+    }
+input::-moz-input-placeholder {
+        /* placeholder颜色  */
+       color: #fff;
+         /* placeholder字体大小  */
+         font-size: 12px;
+        /* placeholder位置  */
+        text-align: left;
+    }
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+.center5{
+	/*text-align: center;*/
+	background: #22303B;
+	margin-top: -20px;
+	line-height: 60px;
+}
+.center5 p{
+	padding: 0;
+	margin: 0;
+}
+.w100{
+	width: 100%;
+}
+.indexw100{
+	width: 100%;
+}
+.bg{
+	background-image: url(../images/bgsmall.png);
+	background-size: 300px auto;
+	background-repeat: no-repeat;
+}
+.indexw100>img{
+	width: 100%;
+	z-index: -2;
+	left: 0;
+}
+body>div>.herad{
+	/*padding: 40px 0 0px 0;*/
+	
+}
+body>div>.herad .navbar{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.indexw100>div.center6 p{
+	margin: 0;
+	padding: 0;
+	line-height: 45px;
+}
+.navbar-collapse .navbar-nav:first-child a:hover{
+	color: #058CC2;
+}
+.navbar-right li a
+{
+	display: block;
+	width: 60px !important;
+	line-height: 25px !important;
+	border: 1px solid #058CE3;
+	/*background: #1E9FFF;*/
+	/*color: #FFF9FF !important;*/
+	height: 30px !important;
+}
+
+
+.navbar-right li a{
+	text-align: center;
+	border-radius: 5px;
+	padding: 0 !important;
+}
+.navbar-right li{
+	margin-left: 20px;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #827c79;
+}
+.navbar-right li a:hover{
+	color: #a0addd !important;
+	border-color: #a0addd ;
+}
+.indexw100 select{
+	    /* 清除默认的箭头样式 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+     -ms-appearance: none;
+     outline: none;
+    /* 右侧添加小箭头的背景图 */
+     /*background: url(../images/bottom.png) 230px center no-repeat !important;*/
+     background-image: url(../images/bottom.png) !important;
+     background-repeat: no-repeat;
+     background-size: 12px !important;
+     background-repeat: no-repeat !important;
+     background-position: 37px 5px !important;
+     width: 60px;
+}
+.indexw100 select option{
+	/*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {display: none;}

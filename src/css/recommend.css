@@ -1,0 +1,244 @@
+.recommend .bnng{
+	display: flex;
+	background: #21313D;
+	padding: 10px 10px;
+}
+.recommend .bnng a{
+	color: #FDFDFD;
+}
+.recommend .bnng span{
+	color: #FDFDFD;
+	margin: 0 5px;
+}
+.recommend .bnng div{
+	color: #FDFDFD;
+}
+.recommend .bnng{
+	margin-top: 20px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.recommend-rec{
+	margin-top: 20px;
+	padding: 0 18px;
+	display: flex;
+	justify-content: space-between;
+	background: #1C2329;
+}
+.recommend-rec .radio i{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #FFFFFF;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.recommend-rec .radio span{
+	color: #fff;
+}
+.recommend-rec .right-rec{
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+.recommend-rec .right-rec>div:first-child{
+	line-height: 40px;
+}
+.recommend-rec .right-rec>div:first-child{
+	color: #FA8E24;
+}
+.recommend-rec .right-rec>div:last-child>i:first-child{
+	font-size: 20px;
+	color: #4FABE1 ;
+	margin-right: 20px;
+}
+.recommend-rec .right-rec>div:last-child{
+	line-height: 40px;
+	
+}
+.recommend-rec .right-rec>div:last-child>i:last-child{
+	color: #FA8E24;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/zhibo.png);
+	background-size: 100% auto;
+}
+.list-recommend img{
+	width: 15px;
+}
+.list-recommend li{
+	display: flex;
+	background: #21303D;
+	color: #FFFFFF;
+	justify-content: space-between;
+	padding: 10px 20px;
+	
+}
+.list-recommend li>div{
+	
+	
+}
+.list-recommend li>div:nth-child(2){
+	display: flex;
+	flex: 1;
+	text-align: center;
+	justify-content: center;
+}
+.list-recommend li>div:nth-child(2) img{
+	margin: 0 10px;
+	width: 20px;
+}.list-recommend li>div:nth-child(2) span{
+	margin: 0 10px;
+	color: #DD7F2A;
+}
+.list-recommend li>div:last-child img{
+	margin: 0 10px;
+	color: #DD7F2A;
+}
+.dataShow>div{
+width: 100%;
+	margin-top: 20px;
+}
+.dataShow .chart{
+	display: flex;
+	justify-content:space-between ;
+}
+.dataShow .chart>div{
+	width: 49%;
+}
+.chart-nav{
+	display: flex;
+	justify-content: space-between;
+	color: #FFFFFF;
+	background: #344D60;
+	line-height: 40px;
+	padding: 0 15px;
+}
+.chart-nav span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #FF9024;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+.cor-remdata{
+	color: #53B4EE;
+}
+.chart-left{
+	border-radius: 5px;
+	overflow: hidden;
+}
+.chart-left .show>div:first-child{
+	width: 100%;
+	height: 100%;
+	background: #212832;
+	opacity: 0.5;
+	z-index: -2;
+}
+
+.minshow{
+	z-index: 5;
+	
+}
+.minshow .hard{
+	text-align: center;
+	color: #fff;
+}
+.minshow .hard span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border-radius: 4px;
+}
+.chart-right{}
+.addbg{
+	background-image: url(../img/bgpng.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+/*图标插件*/
+#woher {
+	margin: 0 auto;
+	
+}
+#woher #container1{
+	margin: 0 auto;
+	width: 50%;
+	min-height: 300px;
+}
+#line{
+	height: 200px;
+}
+.dataShow .add-table li{
+	padding: 10px 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.dataShow .add-table li img{
+	width: 25px;
+}
+.dataShow .main-center{
+	display: flex;
+	width: 70%;
+}
+.dataShow .main-center>div{
+	margin-right: 40px;
+}
+.dataShow .main-center img{
+	margin: 0 10px;
+}
+.fa-star-o{
+	border-radius: 30px;
+	padding: 5px;
+	font-size: 14px;margin-top: 5px;
+	background: #2E3850;
+	color: #9AA9C7;
+	margin-right: 10px;
+}
+.bg5{
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: -129px -30px;
+    background-size: 500px auto;
+}
+.dataShow .add-table li>div:last-child{
+	display: flex;
+	align-items: center;
+}
+.add-table li:nth-child(odd){
+	background: #1F2637;
+}
+.add-table li{
+	/*margin: 10px 0;*/
+	background: #2C3449;
+}
+.sb-text{
+	padding: 47px 0;
+}
+.sb-text>div:last-child{
+	margin-top: 64px;
+}
+#container12{
+	height: 300px;
+}
+.dataShow>div.chart{
+	padding: 0;
+	margin: 0;
+}
+.dw{
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #22313E;
+	z-index: -2;
+	opacity: 0.5;
+}
+.addbg{
+	padding-bottom: 60px;
+}

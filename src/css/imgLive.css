@@ -1,0 +1,432 @@
+.liveList{
+	background: #21303D;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	padding: 10px 0;
+}
+.liveList img{
+	margin: 0 20px;
+	width: 30px;
+}
+.justCenter{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+.liveList p{
+	line-height: 30px;
+	text-align: center;
+}
+.liveList>div:nth-child(2){
+	margin: 0 30px;
+}
+.showTeam table td{
+	width: 14%;
+	background: #304555;
+	color: #fff;
+	text-align: center;
+	border:solid 1px #fff !important;
+}
+.container>div:nth-child(2){
+	margin: 10px 0;
+}
+.imgLive-mian{
+	display: flex;
+	justify-content: space-between;
+}
+.imgLive-mian>div:first-child{
+	width: 74.5%;
+}
+.imgLive-mian>div:last-child{
+	width: 25%;
+}
+.live-left h3{
+	margin: 0;
+	font-weight: normal;
+	color: #fff;
+	background: #1E262F;
+	font-size: 13px;
+	text-align: center;
+	line-height: 42px;
+	
+}
+.live-left{
+	border-radius: 5px;
+	overflow: hidden;
+	background: #304555;
+}
+.live-left table{
+	color: #fff;
+	width: 100%;
+	background: #304555;
+}
+.left-img{
+	width: 10%;
+	
+	
+}
+.left-img>div{
+	text-align: center;
+	height: 50%;
+	display: flex;
+	align-items: center;
+}
+.left-img img{
+	width: 80%;
+	margin: 0 auto;
+}
+.float-left{
+	display: flex;
+}
+.float-left .live-table{
+	width: 90%;
+}
+#herad-table ul{
+	display: flex;
+	color: #fff;
+}
+#herad-table ul li{
+	flex: auto;
+	text-align: center;
+	line-height: 45px;
+}
+.live-table td img{
+	margin: 0;
+	width: 40px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.live-table td{
+	text-align: center;
+}
+.chat-room{
+	display: flex;
+	justify-content: space-between;
+	background: #1F2631;
+	padding: 10px 10px;
+}
+.chat-room .left i{
+	
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background-image: url(../images/live-img.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.chat-room .left{
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.chat-room .right{
+	color: #fff;
+	display: flex;
+}
+.chat-room .right i{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/userHeard.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.live-right .show-chat{
+	background: #304555;
+}
+.show-chat{
+	overflow: hidden;
+	max-height: 400px;
+	color: #FCFDFD;
+	padding: 10px 10px;
+}
+.click-chat{
+	padding: 10px;
+}
+.show-chat img{
+	width: 25px;
+	border-radius: 12px;
+	margin-right: 10px;
+}
+.show-chat li{
+	display: flex;
+	margin-top: 10px;
+}
+.live-right .click-chat{
+	background: #202730;
+}
+.live-right .click-chat>div:last-child{
+	display: flex;
+	justify-content: flex-end;
+}
+.live-right .click-chat input{
+	background: #202730;
+	border: none;
+	line-height: 40px;
+}
+.live-right{
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+textarea{
+	resize: none;
+	background: #202730;
+	color: #fff;
+	padding: 5px;
+	outline: none;
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.banner{
+	margin: 10px 0;
+}
+.details{
+	display: flex;
+}
+.details>div{
+	flex: 1;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.details>div:nth-child(2){
+	margin: 0 5px;
+}
+.game-detail>div:first-child{
+	color: #fff;
+	background: #202730;
+	line-height: 70px;
+	padding-left: 20px;
+	
+}
+.game-detail .show-data{
+	display: flex;
+	background: #304555;
+	color: #fff;
+}
+.show-data .bg1{
+	min-width: 40px;
+	display: flex;
+	justify-content: center;
+}
+.show-data .bg1 i{
+	display: inline-block;
+	width: 4px;
+	height: 9.details>div0%;
+	background: #2C3C49;
+	border-left: 1px solid #2C3C49;
+}
+.show-data .bg1>div{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+.show-data .bg1 span{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #EB3031;
+	
+	/*border-left: 1px solid #2C3C49;*/
+}
+.add-btn{
+	/*width: 30px;
+	height: 20px;*/
+	background: #202730;
+	color: #fff;
+	border: none;
+	border: 1px solid #36729A;
+	padding: 2px 5px;
+	border-radius: 2px;
+}
+.add-btn:hover{
+	background: #36729A;
+}
+.add-btn .active{
+		background: #36729A;
+}
+i{
+	 font-style:normal
+}
+.show-data{
+	justify-content: flex-start;
+}
+.teme-game-data{
+	font-size: 13px;
+}
+.teme-game-data p{
+	line-height: 50px;
+}
+.teme-game-data li>span{
+	color: #FFD11B;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.teme-game-data li i{
+	color: #1B9CFF;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.teme-game-data strong{
+	margin-left: 10px;
+	font-weight: normal;
+	display: inline-block;
+	background-image: url(../images/ak47.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 45px;
+    height:12px;
+}
+.teme-game-data strong.reado{
+	line-height: 50px;
+	background-image: url(../images/reado.png);
+	 background-size: 40% 20px;
+	height: 18px;
+	 background-position: 0px 0px;
+	 /*margin-top: 5px;*/
+	 /*line-height: 35px;*/
+}
+.teme-game-data li.h40{
+	/*padding: 1px 0;*/
+	line-height: 20px;
+}
+.game-img-data{
+	border-radius: 5px;
+	overflow: hidden;
+	background: #304555;
+}
+.game-img-data .heard{
+	background: #202730;
+}
+.game-img-data .heard img{
+	width: 45px;
+}
+.game-img-data .heard {
+	padding: 10px 0;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	line-height: 50px;
+}
+.game-img-data .heard>div:nth-child(2){
+	margin: 0 30px;
+}
+.game-img-data .heard>div span{
+	margin: 0 10px;
+}
+.game-img-data .img-data{
+	background: #304555;
+	padding: 10px;
+}
+.game-img-data .img-data a{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.game-img-data .img-data a img{
+	width: 100%;
+	height: 80px;
+}
+
+ .img-data a>.tt{
+	width: 100%;height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	z-index: 2;
+	opacity: 0.7;
+	display: flex;
+	align-items: center;
+	background: #333030;
+}
+ .img-data a>div:last-child{
+	width: 100%;height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+}
+ .img-data a>div:last-child>div{
+ flex: 1;text-align: center;}
+ .img-data a>div:last-child .color{
+ 	color: #FF2727;
+ }
+ .img-data li{
+ 	margin: 10px 0;
+ }
+ .detail-data{
+ 	overflow: hidden;
+ 	border:5px;
+ 	background: #304555;
+ }
+.detail-data .show{
+	background: #202730;
+	line-height: 70px;
+	color: #fff;
+	padding-left: 20px;
+}
+.detail-data img{
+	width: 20px;
+}
+.detail-data .teame{
+	padding: 10px;
+	padding-left: 20px;
+}
+.teame ul{
+	display: flex;
+	color: #fff;
+	padding-left: 5px;
+	flex: auto;
+}
+.teame>div{
+	display: flex;
+	margin: 20px 0;
+}
+.teame ul li{
+	flex: 1;
+	color: #eee;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	
+}
+.indexw100 .container{
+	padding-bottom: 50px;
+}
+
+.detail-data .data-list i{
+	/*background-image: url(../images/bgsmall.png);
+	background-size: 300px auto;
+	background-repeat: no-repeat;
+	display: inline-block;*/
+	width: 35px;
+	height: 15px;
+	display: inline-block;
+}
+.detail-data .data-list i.gun{
+	background-position: -100px 0;
+}
+.game-detail .show-data{
+	padding-bottom: 20px;
+}
+.herad{
+	padding: 0 !important;
+}
