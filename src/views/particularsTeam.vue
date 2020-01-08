@@ -405,7 +405,7 @@
 <script>
 import $ from 'jquery';
 import echarts from 'echarts';
-
+import axios from 'axios';
 import HeaderBar from '../components/Header';
 import FooterBar from '../components/Footer';
 export default {
@@ -416,6 +416,7 @@ export default {
     },
     mounted(){
         this.DetailsTeam();
+        this.GetAxios();
     },
     methods:{
         DetailsTeam(){
@@ -598,7 +599,23 @@ export default {
                     }
             };
             radar.setOption(radar_a);
+        },
+        GetAxios(){
+            console.log(this.$axios);
+            var comtime = this.$axios.get('http://39.105.124.108:8080/queryAccountInfoById?id=255')
+            .then(function (response) {
+                _this.resp='我的大中国'
+                _this.resp=response.data.data.permissions;
+                // console.log('响应的数据')
+                // console.log(typeof response.data.data.permissions)
+                // console.log( response.data.data.permissions)
+                // console.log(response.data.data);
+            }).catch(function (error) {
+                // console.log(error);
+            });
+            console.log(comtime);
         }
+        
     },
     components:{
         HeaderBar,

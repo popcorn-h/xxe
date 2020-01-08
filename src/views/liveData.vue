@@ -2150,6 +2150,7 @@
 <script>
 import $ from 'jquery';
 import echarts from 'echarts';
+import axios from 'axios';
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import HeaderBar from '../components/Header';
 import FooterBar from '../components/Footer';
