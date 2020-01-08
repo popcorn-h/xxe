@@ -17,7 +17,7 @@
                             <li><a href="">CS:GO</a></li>
                             <li>></li>
                             <li>DOTA2联赛</li>
-                        </ul>
+                        </ul>   
                     </div>
                 </div>
                 <div class="particulars-main">
