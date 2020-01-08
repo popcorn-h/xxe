@@ -1,0 +1,19 @@
+.left .table-data td i.pistol6{
+	background-position: -140px 0px;
+	/*background-size: 500px auto;*/
+}
+.left .table-data td i.addbg-img{
+	width: 32px;
+	height: 22px;
+}
+.left .table-data td i.pistol{
+	background-position: -103px 0px;
+	/*background-size: 500px auto;*/
+}
+.left .table-data td i.csgo5{
+	background: url(../images/csgo5_03.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 22px;
+	height: 22px;
+}

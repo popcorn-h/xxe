@@ -1,0 +1,401 @@
+ol,ul{
+	margin: 0;
+	padding: 0;
+}
+.center6{
+	margin-top: -20px;
+	line-height: 50px;
+}
+.center6 p{
+	margin: 0;
+}
+.indexw100{
+	/*background-image: url(../img/bgpng.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	min-height: 800px;*/
+	
+}
+.indexw100 .teanNav1{
+	margin: 20px 0;
+	background-color: #21313E;
+}
+.indexw100 .teanNav1 ul{
+	display: flex;
+	padding-left: 20px;
+}
+.indexw100 .teanNav1 ul li{
+	line-height: 30px;
+	line-height: 45px;
+	margin: 0 5px;
+}
+.indexw100 .teanNav1 ul li a,.indexw100 .teanNav1 ul li{
+	color: #fff;
+}
+.teamData{
+	display: flex;
+	justify-content: space-between;
+}
+.teamData>div:first-child{
+	width: 75%;
+}
+.teamData>div:last-child{
+	width: 24%;
+}
+.data-left .teamName{
+	background: #2C3E4B;
+	display: flex;
+	border-radius: 5px;
+	padding: 10px;
+	color: #E2E3E4;
+}
+.data-left .teamName img{
+	width: 80px;
+	margin-left: 20px;
+}
+.data-left .teamName div{
+	
+	
+}
+.data-left .teamName div.a{
+	display: flex;
+	align-items: flex-end;
+}
+.data-left .teamName div p{
+	line-height: 30px;
+}
+.data-left .teamName div h6{
+	line-height: 54px;
+	font-size: 14px;
+	color: #C9CACA;
+}
+.data-left .teamName div h6 span{
+	color: #fff;
+}
+ .data-left  .fle{
+	display: flex;
+}
+.data-left  .fle>div{
+	padding: 0 20px;
+}
+.fle .span{
+	color: #fff;
+	
+}
+.fle>div:first-child>p:first-child{
+	color: #fff;
+}
+.res{
+	background: #1C2228;
+	color: #fff;
+	line-height: 40px;
+	padding-left: 15px;
+}
+.res span{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #fff;
+	margin-right: 5px;
+}
+.result{
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.table th,.table td{
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
+}
+.table-striped > tbody > tr:nth-of-type(odd){
+	/*background: #1F2F3D;*/
+}
+.table-striped1 > thead > tr{
+	background: #1F2F3D;
+}
+.table-striped1 > tbody > tr:nth-of-type(even){
+	background: #1F2F3D;
+}
+.table-striped1 > tbody > tr:nth-of-type(odd){
+	background: #334C61;
+}
+.table-striped > tbody > tr td{
+	padding-left: 20px;
+}
+.table-striped > thead > tr th{
+	padding-left: 20px;
+}
+.inlin-blick{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 300px auto;
+}
+.fire{
+	/*background-position: 0 0;*/
+	background-position: -175px -40px;
+	/*background-size: 10px 10px;*/
+}
+.fire1{
+	background-position: -200px -40px;
+}
+.knife{
+	background-position: -175px 5px;
+}
+.knife1{
+	background-position: -245px -15px;
+}
+
+.line-heigth40{
+	display: flex;
+	align-items: center;
+	line-height: 40px !important;
+}
+.td1{
+	line-height: 40px !important;
+}
+td p,td a{
+	line-height: 20px !important;
+}
+p,a{
+	margin: 0;
+	padding: 0;
+}
+td img{
+	width: 15px;
+}
+.page2{
+	
+}
+table{
+	margin: 0 !important;
+}
+.page2 nav{
+	margin: 0;
+	height: 100px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page2 nav{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.pagination{
+	margin: 0;
+}
+.page2 nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.page2 {
+	background: #273743;
+	min-height: 100px;
+}
+.page2 nav ul a{
+	/*color: #3E5D73;*/
+	background: #3E5D73;
+	border: none;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+.statistics{
+	margin-top: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.alitem-hei{
+	padding: 2px 2px;
+	display: flex;
+	align-items: center;
+	min-height: 56px;
+}
+.alitem-hei img{
+	width: 60px;
+}
+.statistics .td1{
+	line-height: 75px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	/*line-height: ;*/
+}
+.colo-bolus{
+	color: #039DFF !important;
+	cursor:pointer;
+}
+.indexw100{
+	overflow: hidden;
+}
+
+.data-right .right-team{
+	border-radius: 5px;
+	overflow: hidden;
+}
+.data-right .right-team .nav{
+	
+}
+.team-information .heard ul{
+	display: flex;
+	width: 100%;
+}
+.team-information .heard ul li{
+	　flex: auto;
+	margin-left: 5px;
+}
+.team-information .heard ul li img{
+	width: 100%;
+	height: 100px;
+}
+.team-information .heard ul{
+	margin-left: -3px;
+}
+.team-information .heard ul li{
+	position: relative;
+}
+.team-information .heard ul li>div{
+	width: 100%;
+	height: 35px;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+.add-divcolor{
+	background: #12191F;
+	opacity: 0.5;
+}
+.team-information .heard ul li>div{
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	text-indent: 5px;
+}
+.showColor{
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+}
+.showColor span{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.progress1 li{
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 5px;
+}
+.progress1 li>div:last-child{
+	width: 80%;
+	
+}
+.progress1 .progress{
+	margin: 0;
+	height: 10px;
+	margin: 5px 0;
+}
+.member{
+	margin-top: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.member .main{
+	background: #2E3E4D;
+}
+.member .main ul{
+	padding: 10px;
+}
+.member .main li{
+	background: #293845;
+	display: flex;
+	color: #fff;
+	padding: 5px 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.member .main li>div:first-child
+{
+	width: 50px;
+}
+.member .main li>div:first-child img{
+	width: 100%;
+	border-radius: 25px;
+}
+.member .main li>div:last-child{
+	line-height: 25px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.Competition{
+	margin-top: 20px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.Competition-mian{
+	background: #2E3E4D;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.Competition-mian li{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	
+}
+.Competition-mian li img{
+	width: 25px;
+}
+.Competition-mian span{
+	margin-left: 10px;
+}
+.one{
+	display: inline-block;
+	width: 15px;
+	height: 13px;
+	background: url(../images/one.png);
+	background-size: 100% auto;
+	margin-left: 3px;
+}
+.indexw100 .container{padding: 0!important;}
+
+.indexw100 {
+	padding-top: 20px;
+}
+.teamData{
+	margin-bottom: 40px;
+}
+.colo-bolus i{
+	color: #039DFF;
+}
+.pagination > li > a:hover, .pagination > li > span:hover{
+	background-color: #8097a8;
+	color: #fafafa;
+}
+
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #d8dee4;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.alitem-hei span{
+	margin-left: 5px;
+}

@@ -1,0 +1,107 @@
+.regard{
+	display: flex;
+	
+}
+ul,ol{
+	padding: 0;
+	margin: 0;
+}
+.regard .reg-left{
+	width: 20%;
+}
+.regard .reg-left>div:first-child{
+	width: 100%;
+	height: 100%;
+	background: #1D3246;
+	opacity: 0.4;
+	z-index: -2;
+}
+.reg-left .ls{
+	
+}
+.reg-left li{
+	margin: 5px auto;
+	line-height: 35px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+.reg-left li>div{
+	text-align: center;
+	padding: 0px 20px;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	color: #B2CBDB;
+	cursor:pointer;
+	width: 100px;
+	border: 1px solid #5F7285;
+}
+.reg-left .ls li.active div{
+	color: #FFFFFF;
+	background: #4AA4DD;
+	border: none;
+}
+.reg-left li>div.active{
+	
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.regard .reg-right{
+	width: 80%;
+}
+.reg-right .reg{
+	min-height: 500px;
+}
+.reg-right .reg>div:first-child{
+	width: 100%;
+	
+	height: 100%;
+	opacity: 0.5;
+	z-index: -2;
+	background: #152232;
+}
+.reg-right .reg h6{
+	padding-left: 20px;
+	padding-top: 10px;
+	line-height: 30px;
+	color: #FAFAFB;
+	font-size: 16px;
+}
+.reg-right .reg p{
+	padding-left: 20px;
+	line-height: 25px;
+	color: #FAFAFB;
+	font-size: 12px;
+	
+	
+}.indexw100{
+	padding-bottom: 60px;
+}
+h7{
+	padding-left: 20px;
+	color: #FAFAFB;
+	font-size: 12px;
+}
+.reg li{
+	font-size: 12px;
+	color: #FAFAFB;
+	padding-left: 20px;
+}
+.reg-left li>div {
+    text-align: center;
+    padding: 0px 30px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #B2CBDB;
+    cursor: pointer;
+   width: 140px; 
+    border: 1px solid #5F7285;
+}

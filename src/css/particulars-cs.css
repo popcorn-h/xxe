@@ -1,0 +1,311 @@
+.particulars-main>div:first-child{
+	width: 75%;
+}
+.particulars-main>div:last-child{
+	width: 24%;
+}
+.particulars-main{
+	display: flex;
+	justify-content: space-between;
+}
+.data-left .teamName {
+    background: #2C3E4B;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    color: #E2E3E4;
+}
+.data-left .teamName img {
+    width: 80px;
+    margin-left: 20px;
+}
+.data-left .fle {
+    display: flex;
+}
+.data-left .fle>div {
+    padding: 0 20px;
+}
+.data-left .teamName div h6{
+				font-size: 14px;
+				line-height: 45px;
+				margin-top: 29px;
+}
+			.data-left .teamName div p{
+				line-height:36px;
+			}
+			.data-left .fle>div{
+				padding: 0 10px;
+			}
+.result {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.res {
+    background: #1C2228;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.res span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 5px;
+}
+table {
+    margin: 0 !important;
+}
+.table-striped1 > thead > tr {
+    background: #1F2F3D;
+}
+.table th, .table td {
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+td p, td a {
+    line-height: 20px !important;
+}
+.td1 img{
+	width: 25px;
+}
+.fire {
+    /* background-position: 0 0; */
+    background-position: -175px -40px;
+    /* background-size: 10px 10px; */
+}
+.inlin-blick {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: 300px auto;
+}
+.knife {
+    background-position: -175px 5px;
+}
+.fire1 {
+    background-position: -200px -40px;
+}
+.knife1 {
+    background-position: -245px -15px;
+}
+.table-striped1 > tbody > tr:nth-of-type(even) {
+    background: #1F2F3D;
+}
+.page2 {
+    background: #273743;
+    min-height: 100px;
+}
+.page2 nav {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    height: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 nav ul a {
+    /* color: #3E5D73; */
+    background: #3E5D73;
+    border: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.map-odd{
+	margin: 20px 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.win-rate {
+	display: flex;
+	padding: 20px 20px;
+}
+.win-rate>div{
+	width: 25%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.map-odd .dw {
+	background: #1E2933;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.5;
+}
+.res{
+	background: #1D2227;
+}
+.win-rate .res{
+	text-align: center;
+	padding-left: 0;
+}
+.ver-dw{
+	background: #586A7D;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.2;
+}
+.rate-data-mian{
+	display: flex;
+	padding: 10px 20px;
+	justify-content: space-between;
+}
+.rate-data-title {
+	color: #fff;
+}
+.rate-data-mian .color-blue{
+	color: #0EBB12;
+}
+.rate-data-mian .color-red{
+	color: #9D1D23;
+}
+.rate-data-title span{
+	margin-right: 5px;
+}
+.rate-data-title i{
+	margin-right: 5px;
+}
+.rate-data-title .progress{
+	margin: 0;
+	height: 5px;
+}
+.rate-data-title .cor-red{
+	color: #BB0E12;
+	background: #BB0E12;
+}
+.rate-data-title .progress{
+	margin-top: 10px;
+}
+.rate-data-mian .chart-main{
+	width:80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+}
+.rate-data-title{
+	padding-top: 10px;
+}
+.win-rate>div{
+	margin-right: 40px;
+}
+.particulars-main{
+	padding-top: 20px;
+}
+.histogram{
+	background: #283A49;
+	height: 500px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.histogram #histogram{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.radar{
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.radar-w{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #282D34;
+	opacity: 0.2;
+	z-index: -2;
+}
+#radar{
+	width: 80%;
+	margin: 0 auto;
+	height: 300px;
+}
+.result-a{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #282D34;
+	opacity: 0.5;
+	z-index: -2;
+}
+.page2 nav ul a {
+    /* color: #3E5D73; */
+    background: #3E5D73;
+    border: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.circles {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    /*border: 10px solid #ffc107;*/
+    /* overflow: hidden; */
+}
+.progress-radial {
+    float: left;
+    /* margin-right: 30px; */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*border: 2px solid #2f3439;*/
+    background-color: tomato;
+}
+.progress-25 {
+    background-image: linear-gradient(90deg, #12171c 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #ff6347 50%, #12171c 50%, #12171c 50%);
+}
+.progress-radial .overlay {
+    position: absolute;
+    width: 28px;
+    height: 30px;
+    background-color: #2C3C49;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+}
+.progress-radial {
+    float: left;
+    /* margin-right: 30px; */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*border: 2px solid #12171c;*/
+    background-color: #12171c;
+}
+.pages1 a {
+    background: #3E5C71 !important;
+    color: #EEEEEE !important;
+    border: none !important;
+    margin-right: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #e5e8ec;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}

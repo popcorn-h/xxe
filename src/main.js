@@ -1,12 +1,31 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from "vue";
+import App from "./App.vue";
+import axios from "axios";
+import router from "./router";
+import store from "./store";
+import echarts from "echarts";
 
-Vue.config.productionTip = false
+Vue.prototype.$echarts = echarts;
+
+axios.defaults.baseURL = "https://api.xxe.io/";
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+ 
+//配置token令牌在axios的请求拦截器中Authorization
+axios.interceptors.request.use(config => {
+  // config.headers.Authorization = window.sessionStorage.getItem('token');
+  return config;
+});
+
+//响应拦截器
+axios.interceptors.response.use(config => {
+  return config;
+});
+Vue.prototype.$axios = axios;
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");
