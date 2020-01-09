@@ -21,6 +21,7 @@
                         <li><a href="#">比赛推荐</a></li>
                             <li class="border-378">|</li>
                         <li><a href="#">职业联赛</a></li>
+                        <!-- header 路由:> -->
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
