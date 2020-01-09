@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Index from "../views/index.vue";
@@ -8,11 +9,24 @@ import Regard from "../views/regard.vue";
 import Recommend from "../views/recommend.vue";
 import Professional from "../views/professional.vue";
 import Password from "../views/password.vue";
+=======
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Affirmpwd from '../views/affirmpwd.vue'
+import AnalyzeCs from '../views/analyzeCs.vue'
+import Analyze from '../views/analyze.vue'
+import ImgLive from '../views/imgLive.vue'
+import LeagueDetails from '../views/leagueDetails.vue'
+import LiveData from '../views/liveData.vue'
+import MaCenter from '../views/maCenter.vue'
+import ParticularsTeam from '../views/particularsTeam.vue'
+>>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 
 
 Vue.use(VueRouter);
 
 const routes = [
+<<<<<<< HEAD
   { path:"/",redirect:'/index'},
   { path: "/index",name:"Index",component: Index},
   { path: "/teamdetails",name:"Teamdetails",component: Teamdetails},
@@ -24,6 +38,49 @@ const routes = [
   { path: "/password",name:"password",component: Password},
 ];
 
+=======
+  {
+    path:'/affirmpwd',
+    name:'affirmpwd',
+    component:Affirmpwd
+  },
+  {
+    path:'/analyzeCs',
+    name:'analyzeCs',
+    component:AnalyzeCs
+  },
+  {
+    path:'/analyze',
+    name:'analyze',
+    component:Analyze
+  },
+  {
+    path:'/imgLive',
+    name:'imgLive',
+    component:ImgLive
+  },
+  {
+    path:'/leagueDetails',
+    name:'leagueDetails',
+    component:LeagueDetails
+  },
+  {
+    path:'/liveData',
+    name:'liveData',
+    component:LiveData
+  },
+  {
+    path:'/maCenter',
+    name:'maCenter',
+    component:MaCenter
+  },
+  {
+    path:'/particularsTeam',
+    name:'particularsTeam',
+    component:ParticularsTeam
+  }
+]
+>>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 
 const router = new VueRouter({
   routes

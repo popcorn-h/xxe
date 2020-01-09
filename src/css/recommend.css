@@ -155,7 +155,11 @@ width: 100%;
 }
 .chart-right{}
 .addbg{
+<<<<<<< HEAD
 	/* background-image: url(../img/bgpng.png); */
+=======
+	background-image: url(../img/bgpng.png);
+>>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: bottom;

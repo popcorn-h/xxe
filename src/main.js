@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Vue from "vue";
 import App from "./App.vue";
 import axios from "axios";
@@ -28,6 +29,19 @@ Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false;
 
+=======
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import echarts from 'echarts'
+import axios from 'axios'
+
+Vue.config.productionTip = false;
+Vue.prototype.$echarts = echarts;
+Vue.prototype.$axios = axios;
+Vue.type
+>>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 new Vue({
   router,
   store,
