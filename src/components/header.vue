@@ -75,7 +75,7 @@
 import '../js/jquery-1.11.0';
 import '../js/login';
 export default {
-    data(){
+    data(){     
     return{
     }
     },
