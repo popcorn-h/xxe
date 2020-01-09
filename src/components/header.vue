@@ -72,6 +72,8 @@
     </div>
 </template>
 <script>
+import '../js/jquery-1.11.0';
+import '../js/login';
 export default {
     data(){
     return{
