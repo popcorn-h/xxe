@@ -222,14 +222,11 @@ ul{
 .right .heard{
 	display: flex;
 	justify-content: space-between;
-	background: ;
 }
 .right .heard>div{
 	flex: auto;
 }
-.Grips-data{
-	/*justify-content: space-between;*/
-}
+
 .Grips-data .right{
 	background: #1E262F;
 	margin-left: 1%;
@@ -453,9 +450,6 @@ select option{
 }
 .hero .table td .progress .progress-bar{
 	background: #2194FF;
-}
-.hero .table > tbody > tr > td{
-	/*line-height:60px;*/
 }
 .analyze{
 	margin-bottom: 40px;

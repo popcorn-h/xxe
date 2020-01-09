@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-$(function(){
-	var myChart = echarts.init(document.getElementById('broken_one'));
-=======
 export default() =>{
 	var myChart = this.$echarts.init(document.getElementById('broken_one'));
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
  				var lintext={
    					 xAxis: {
 				        type: 'category',
@@ -63,8 +58,4 @@ export default() =>{
  				var broken_two = echarts.init(document.getElementById('broken_two'));
  				broken_two.setOption(lintext);
  				
-<<<<<<< HEAD
-})
-=======
 }
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2

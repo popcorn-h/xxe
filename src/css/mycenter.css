@@ -144,9 +144,7 @@ tr:first-child>td:first-child{
 	padding: 0;
 	margin: 0;
 }
-.page1 li{
-	
-}
+
 .page1 li a{
 	margin-left: 2.5px;
 	margin-right: 2.5px;
@@ -307,9 +305,7 @@ input{
 	background:#374f64;
 	color: #fafafa;
 }
-.table>tr:hover{
-	
-}
+
 .center .heard ul li{
 	cursor:pointer;
 }

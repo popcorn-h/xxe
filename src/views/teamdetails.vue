@@ -544,8 +544,8 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 
 export default {
   data() {

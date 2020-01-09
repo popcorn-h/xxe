@@ -660,8 +660,8 @@ import echarts from 'echarts';
 import axios from 'axios';
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../js/analy_cs.js';
-import HeaderBar from '../components/Header';
-import FooterBar from '../components/Footer';
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 export default {
     data(){
         return{

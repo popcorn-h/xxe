@@ -90,8 +90,8 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 export default {
   data() {
     return {};
@@ -143,7 +143,6 @@ export default {
   color: #fff;
   min-height: 300px;
   z-index: 9999;
-  border: ;
   border-radius: 7px;
   box-shadow: 1px 1px 52px #09131d;
   background: #1f2f3d;

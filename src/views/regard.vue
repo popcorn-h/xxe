@@ -59,7 +59,7 @@
 							
 						</div>
 						<h6>联系方式</h6>
-						<h7>用户服务</h7>
+						<h6>用户服务</h6>
 						<ul>
 							<li>市场、合作邮箱：15478923@163.com</li>
 							<li>商务合作QQ：15478923@163.com</li>
@@ -81,9 +81,8 @@ import $ from "jquery";
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../js/login';
 
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
-
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 export default {
   data() {
     return {};

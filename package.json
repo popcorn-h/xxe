@@ -8,18 +8,12 @@
   },
   "dependencies": {
     "axios": "^0.19.1",
-<<<<<<< HEAD
-    "core-js": "^3.4.4",
-    "echarts": "^4.6.0",
-    "popper.js": "^1.16.0",
-    "qs": "^6.9.1",
-=======
     "bootstrap": "^4.4.1",
     "core-js": "^3.4.4",
     "echarts": "^4.6.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
+    "qs": "^6.9.1",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2"

@@ -29,12 +29,6 @@
   	flex-wrap: wrap;
   }
 }
-<<<<<<< HEAD
-body{
-	
-}
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 nav{
 	margin-top: 40px;
 	
@@ -42,12 +36,6 @@ nav{
 .addnav-color{
 	background-color: #101318cc;
 }
-<<<<<<< HEAD
-.navbar-img-log{
-	
-}
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 .reomvecolor{
 	border: none;
 	border-style: none;
@@ -55,25 +43,12 @@ nav{
 }
 .active-addcolor>a{
 	color: #058CE3 !important;
-<<<<<<< HEAD
-	border-bottom: #058CE3 !important solid 1px;
-=======
 	border-bottom:1px solid #058CE3 !important;
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 }
 .navbar-brand{
 	height: 85px;
 	padding: 0;
 }
-<<<<<<< HEAD
-.navbar-collapse{
-	/*display: flex;
-	
-	align-items: center;*/
-}
-
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 .swiper-slide img{
 	width: 100%;
 margin-bottom: 1.5em;
@@ -89,13 +64,6 @@ width: 2em;
 .addcolr-d>a{
 	color: #0774BB !important;
 }
-<<<<<<< HEAD
-.navbar-nav>li{
-	/*display: flex;
-	align-items: center;*/
-}
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 .ioic-wited{
 	color: #E9EAEC;
 }
@@ -206,12 +174,6 @@ width: 2em;
 	background: #293C4E;
 	border-radius: 5px;
 }
-<<<<<<< HEAD
-#mian .main{
-	/*padding: 10px;*/
-}
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 .game-tiem{
 	margin: 10px 0;
 	border-bottom: 1px solid #212F3A;
@@ -266,12 +228,6 @@ color: #FFFFFF;}
 	border-top-right-radius: 5px;
 
 }
-<<<<<<< HEAD
-.game-video .video>div .colr1>div:nth-child(2n+1){
-	
-}
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 .game-video .video>div .colr1>div{
 	text-align: left;
 	display: flex;
@@ -509,10 +465,6 @@ margin: 50px auto;
 color: #fff;
 min-height: 300px;
 z-index: 9999;
-<<<<<<< HEAD
-border: ;
-=======
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2
 border-radius: 7px;
 box-shadow: 1px 1px 52px #09131d;
 background: #1f2f3d;

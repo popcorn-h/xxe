@@ -16,9 +16,7 @@ ul,ol{
 	opacity: 0.4;
 	z-index: -2;
 }
-.reg-left .ls{
-	
-}
+
 .reg-left li{
 	margin: 5px auto;
 	line-height: 35px;
@@ -42,9 +40,7 @@ ul,ol{
 	background: #4AA4DD;
 	border: none;
 }
-.reg-left li>div.active{
-	
-}
+
 
 p{
 	margin: 0;

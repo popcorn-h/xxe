@@ -56,8 +56,8 @@
 import $ from "jquery";
 import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "../js/login";
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 
 export default {
   data() {
@@ -186,5 +186,4 @@ body > div > div.container > .row:first-child {
     line-height: 10px;
     padding-left: 15px;
 }
-
 </style>

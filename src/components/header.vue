@@ -14,25 +14,26 @@
                 </div>
                 <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active-addcolor"><a href="#" class="">首页<span class="sr-only">(current)</span></a></li>
+                        <li class="active-addcolor" @click="$router.push('/index')"><a href="#" class="">首页<span class="sr-only">(current)</span></a></li>
                         <li class="border-378">|</li>
-                        <li><a href="#">即时比分</a></li>
+                        <li @click="$router.push('/scoreTime')"><a href="#">即时比分</a></li>
                             <li class="border-378">|</li>
-                        <li><a href="#">比赛推荐</a></li>
+                        <li @click="$router.push('/teamdetails')"><a href="#">比赛推荐</a></li>
                             <li class="border-378">|</li>
-                        <li><a href="#">职业联赛</a></li>
+                        <li @click="$router.push('/professional')"><a href="#">职业联赛</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="addcolr-d log" ><a href="#">登录</a></li>
-                        <li class="addcolr-d register"><a href="#">注册</a></li>
+                        <li class="addcolr-d log"><a href="#">登录</a></li>
+                        <li class="addcolr-d register"  @click="$router.push('/register')"><a href="#">注册</a></li>
                     </ul>
                 </div>
             </div>
             </nav>
+
             <div class="posi">
             </div>
-            <!-- <div class="sg">
+            <div class="sg" v-show="isshow">
                 <div class="main1">
                     <p>登录</p>
                     <div class="center">
@@ -64,18 +65,20 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
-            </div> -->
+            </div>
+
         </div>
     </div>
 </template>
 <script>
 export default {
     data(){
-    return{}
+    return{
+    }
     },
-    methods:{}
+    methods:{
+    }
 }
 </script>
 <style lang='less'>

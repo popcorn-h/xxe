@@ -2,7 +2,7 @@
  <div>
 	 <div>
 			<!-- hander -->
-			<header-bar/>
+				<header-bar/>
 	
 			<div class="indexw100 relative">
 				<img src="img/bgpng.png" alt=""  class="absolute"/>
@@ -666,7 +666,7 @@
 			</div>
 	<!-- footer -->
 			
-	<footer-bar/>
+			<footer-bar/>
 		</div>
  </div>
 </template>
@@ -675,8 +675,8 @@
 import qs from 'qs';
 import $ from 'jquery';
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import HeaderBar from "../components/header";
-import FooterBar from '../components/footer';
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 import { color } from '../js/echarts';
 
 export default {

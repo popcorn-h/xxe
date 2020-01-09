@@ -406,8 +406,8 @@
 import $ from 'jquery';
 import echarts from 'echarts';
 import axios from 'axios';
-import HeaderBar from '../components/Header';
-import FooterBar from '../components/Footer';
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 export default {
     data(){
         return{

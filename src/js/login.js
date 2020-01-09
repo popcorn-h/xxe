@@ -4,8 +4,4 @@ export default ()=>{
 	$(".log").click(function(){
 		$(".sg,.posi").show();
 	})
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2298b680fe96bb193f706b76ee7cdff8e5f962a2

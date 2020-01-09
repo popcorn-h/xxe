@@ -33,9 +33,7 @@ ul,ol{
 a{
 	text-decoration: none;
 }
-a:hover{
-	
-}
+
 .flexb{
 	display: flex;
 	justify-content: space-between;
@@ -132,10 +130,9 @@ input::-moz-input-placeholder {
 	z-index: -2;
 	left: 0;
 }
-body>div>.herad{
-	/*padding: 40px 0 0px 0;*/
-	
-}
+/*body>div>.herad{
+	padding: 40px 0 0px 0;
+}*/
 body>div>.herad .navbar{
 	margin: 0 !important;
 	padding: 0 !important;
