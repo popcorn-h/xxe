@@ -672,6 +672,7 @@
 </template>
 
 <script>
+import qs from 'qs';
 import $ from 'jquery';
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import HeaderBar from "../components/header";
@@ -714,21 +715,23 @@ export default {
 		console.log(this.secret);
 		console.log(this.key);
 		console.log(this.time);
-		const agrs={url:`app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp`}
+		const agrs={'url':`app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp`}
+		// console.log(qs.stringify(agrs));
+		
 		// app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp
 		// console.log(args);
 		// const {data:aa}=await this.$axios.get(`?app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp=${this.time}`)
 		// const {data:aa}=await this.$axios.get(`?app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp=${this.time}`)
-		// const {data:res}=await this.$axios.post(`http://gaming.prmajors.com/index.php/gaming/index/sign`,{url:`app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp`});
+		// const {data:res}=await this.$axios.post(`http://gaming.prmajors.com/index.php/gaming/index/sign`,qs.stringify(agrs));
 		// const {data:res}=await this.$axios.get(`http://gaming.prmajors.com/index.php/gaming/index/sign?app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp`);
-		// const {data:res}=await this.$axios({
-		// 	method:"post",
-		// 	url:`http://gaming.prmajors.com/index.php/gaming/index/sign`,
-		// 	data:JSON.stringify(agrs)
-		// });
-		console.log(JSON.stringify(agrs));
+		const {data:res}=await this.$axios({
+			method:"post",
+			url:`http://gaming.prmajors.com/index.php/gaming/index/sign`,
+			data:qs.stringify(agrs)
+		});
+		// console.log(JSON.stringify(agrs));
 		
-		// console.log(res);
+		console.log(res);
 		// console.log(aa);
 	}
  },
