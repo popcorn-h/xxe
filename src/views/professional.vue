@@ -8,8 +8,6 @@
 						<p class="ioic-wited"><i class="fa fa-bell-o" aria-hidden="true"></i>：官方网站，请勿上当受骗，近期会员充值偶尔出现异常，请加QQ：123456789</p>
 					</div>
 				</div>
-			
-			
 			<div class="container professional">
 				
 				<div class="heard-prof">
@@ -230,8 +228,8 @@
 import $ from "jquery";
 import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "../js/login";
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 
 export default {
   data() {
@@ -253,9 +251,6 @@ export default {
 @import "../css/index.css";
 @import "../css/professional.css";
 @import "../css/laydate.css";
-.heard-prof {
-  margin-top: 20px;
-}
 .indexw100 {
   padding-bottom: 50px;
 }

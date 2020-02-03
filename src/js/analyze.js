@@ -1,5 +1,5 @@
-$(function(){
-	var myChart = echarts.init(document.getElementById('broken_one'));
+export default() =>{
+	var myChart = this.$echarts.init(document.getElementById('broken_one'));
  				var lintext={
    					 xAxis: {
 				        type: 'category',
@@ -58,4 +58,4 @@ $(function(){
  				var broken_two = echarts.init(document.getElementById('broken_two'));
  				broken_two.setOption(lintext);
  				
-})
+}

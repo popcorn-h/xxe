@@ -24,8 +24,10 @@
                 <div>
                   <input
                     type="tel"
-                    value=""
-                    placeholder="输入注册用手机号"
+                    v-model="phone"
+                    :placeholder="telmsg"
+                    @focus="telmsg=''"
+                    @blur="handle"
                   />
                 </div>
               </div>
@@ -33,8 +35,9 @@
                 <div>
                   <input
                     type="tel"
-                    value=""
-                    placeholder="输入验证码"
+                    :placeholder="str"
+                    @focus="str=''"
+                    @blur="str='验证码'"
                   />
                 </div>
                 <div>
@@ -56,14 +59,29 @@
 import $ from "jquery";
 import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "../js/login";
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 
 export default {
   data() {
-    return {};
+    return {
+      telmsg:'输入注册用手机号',
+      str:'验证码',
+      phone:''
+    };
   },
-  methods: {},
+  methods: {
+    handle(){
+        var abtel = /^[1][3,4,5,7,8,9][0-9]{9}$/;
+        if(this.phone=='')return  this.telmsg='输入注册用手机号';
+        if(abtel.test(this.phone)==false){
+          this.phone='';
+          this.telmsg='输入注册用手机号';
+          return alert('手机号码格式不正确！');
+        } 
+        
+    }
+  },
   components: {
     HeaderBar,
     FooterBar
@@ -186,5 +204,4 @@ body > div > div.container > .row:first-child {
     line-height: 10px;
     padding-left: 15px;
 }
-
 </style>

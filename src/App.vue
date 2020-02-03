@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div id="nav">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data(){
-    return{}
+    return{
+      
+    }
   }
 }
 </script>
 <style lang="less">
+
 </style>

@@ -59,7 +59,7 @@
 									<table class="table table-striped1">
 										<thead>
 											<tr>
-												<th>赛是时间</th>
+												<th>赛事时间</th>
 												<th>游戏时间</th>
 												<th>比分</th>
 												<th>一血十杀</th>
@@ -544,8 +544,8 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../components/header";
-import FooterBar from "../components/footer";
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 
 export default {
   data() {

@@ -1,6 +1,4 @@
-.leagueDetails .league-main{
-	
-}
+
 .leagueDetails .maiin-hear{
 	background:#243442;
 }
@@ -121,9 +119,6 @@
 	background: #1A252F;
 	opacity: 0.5;
 	z-index: -2;
-}
-.team-list .team-list1>div{
-	
 }
 .team-list1 .list-style{
 	display: flex;
@@ -278,9 +273,6 @@ p{
 	border-bottom: 1px solid #679BC2;
 	align-items: center;
 }
-.tow2>div:first-child>div p{
-	
-}
 .tow2>div:first-child>div>div{
 	color: #FFFFFF;
 	display: flex;
@@ -404,9 +396,6 @@ tbody img{
 }
 .leage-left{
 	padding-bottom: 40px;
-}
-.leage-right{
-	
 }
 .leage-right .introduce{
 	margin-top: 10px;

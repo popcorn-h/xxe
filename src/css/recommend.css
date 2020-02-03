@@ -75,10 +75,7 @@
 	padding: 10px 20px;
 	
 }
-.list-recommend li>div{
-	
-	
-}
+
 .list-recommend li>div:nth-child(2){
 	display: flex;
 	flex: 1;
@@ -153,7 +150,7 @@ width: 100%;
 	background: #fff;
 	border-radius: 4px;
 }
-.chart-right{}
+
 .addbg{
 	/* background-image: url(../img/bgpng.png); */
 	background-size: 100% auto;

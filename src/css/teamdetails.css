@@ -9,13 +9,13 @@ ol,ul{
 .center6 p{
 	margin: 0;
 }
-.indexw100{
+/*.indexw100{
 	/*background-image: url(../img/bgpng.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	min-height: 800px;*/
+	min-height: 800px;
 	
-}
+}*/
 .indexw100 .teanNav1{
 	margin: 20px 0;
 	background-color: #21313E;
@@ -53,10 +53,7 @@ ol,ul{
 	width: 80px;
 	margin-left: 20px;
 }
-.data-left .teamName div{
-	
-	
-}
+
 .data-left .teamName div.a{
 	display: flex;
 	align-items: flex-end;
@@ -110,9 +107,9 @@ ol,ul{
 	text-align: left;
 	padding-left: 10px;
 }
-.table-striped > tbody > tr:nth-of-type(odd){
-	/*background: #1F2F3D;*/
-}
+/*.table-striped > tbody > tr:nth-of-type(odd){
+	/*background: #1F2F3D;
+}*/
 .table-striped1 > thead > tr{
 	background: #1F2F3D;
 }
@@ -166,9 +163,6 @@ p,a{
 }
 td img{
 	width: 15px;
-}
-.page2{
-	
 }
 table{
 	margin: 0 !important;
@@ -236,15 +230,13 @@ table{
 	border-radius: 5px;
 	overflow: hidden;
 }
-.data-right .right-team .nav{
-	
-}
+
 .team-information .heard ul{
 	display: flex;
 	width: 100%;
 }
 .team-information .heard ul li{
-	　flex: auto;
+	flex: auto;
 	margin-left: 5px;
 }
 .team-information .heard ul li img{

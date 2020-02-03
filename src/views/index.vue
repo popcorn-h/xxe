@@ -2,7 +2,7 @@
  <div>
 	 <div>
 			<!-- hander -->
-			<header-bar/>
+				<header-bar/>
 	
 			<div class="indexw100 relative">
 				<img src="img/bgpng.png" alt=""  class="absolute"/>
@@ -21,14 +21,17 @@
 							<div class="heard">
 								<i class="fa fa-arrows-v" aria-hidden="true"></i>快速导航
 							</div>
-							<div class="center addh">
-								<i class="i"></i>DOTA比分
+							<div class="center addh" @click="getgame(11)">
+								<i class="i"></i>LOL比分
 							</div>
-							<div class="center addh">
-								<i class="i"></i>DOTA比分
+							<div class="center addh" @click="getgame(24)">
+								<i class="i"></i>DOTA2比分
 							</div>
-							<div class="center addh">
-								<i class="i"></i>DOTA比分
+							<div class="center addh" @click="getgame(205)">
+								<i class="i"></i>CSGO比分
+							</div>
+							<div class="center addh" @click="getgame(254)">
+								<i class="i"></i>王者荣耀比分
 							</div>
 						</div>
 						<div class="nav">
@@ -263,10 +266,10 @@
 										<div class="allGame">
 											<div class="">全部游戏</div>
 											<ul class="">
-												<li class=""><a href=""><i></i>DOTA</a></li>
-												<li class=""><a href=""><i></i>DOTA</a></li>
-												<li class=""><a href=""><i></i>DOTA</a></li>
-												<li class=""><a href=""><i></i>DOTA</a></li>
+												<li class="" @click="getgame(11)"><a href=""><i></i>LOL</a></li>
+												<li class="" @click="getgame(24)"><a href=""><i></i>DOTA2</a></li>
+												<li class="" @click="getgame(205)"><a href=""><i></i>CSGO</a></li>
+												<li class="" @click="getgame(254)"><a href=""><i></i>王者荣耀</a></li>
 											</ul>
 										</div>
 										<div class="game-tiem">
@@ -362,90 +365,34 @@
 										<div class="addcolor">未开始比赛</div>
 										<div class="main">
 											<ul>
-												<li class="row">
+												<li class="row" v-for="(item,index) in gamelist" :key="index">
 													<div class="col-md-3 tiel">
 														<i></i>
-														<span>11-22 19:00</span>
+														<span>{{item.begin_time}}</span>
 													</div>
 													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
+														<div class="stage">
+															{{item.match_stage}}
 														</div>
 														<div>
-															BO3
+															{{item.bo}}
 														</div>
 													</div>
 													<div id="" class="col-md-5 flx">
 														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
+															{{item.team_a.name}}
+															<img :src="item.team_a.icon" alt="">
+															<i>-vs-</i>
+															<img :src="item.team_b.icon" alt="">
+															{{item.team_b.name}}
 														</div>
 													</div>
 													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
+														<div @click="$router.push('/analyze/'+item.game_id)"><a href="javascript:;">分析</a></div>
+														<div><a href="javascript:;">数据</a></div>
 													</div>
 												</li>
-												<li class="row">
-													<div class="col-md-3 tiel">
-														<i></i>
-														<span>11-22 19:00</span>
-													</div>
-													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
-														</div>
-														<div>
-															BO3
-														</div>
-													</div>
-													<div id="" class="col-md-5 flx">
-														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
-														</div>
-													</div>
-													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
-													</div>
-												</li>
-												<li class="row">
-													<div class="col-md-3 tiel">
-														<i></i>
-														<span>11-22 19:00</span>
-													</div>
-													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
-														</div>
-														<div>
-															BO3
-														</div>
-													</div>
-													<div id="" class="col-md-5 flx">
-														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
-														</div>
-													</div>
-													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
-													</div>
-												</li>
+												
 											</ul>
 										</div>
 									</div>
@@ -454,90 +401,34 @@
 										<div class="addcolor">已结束的比赛</div>
 										<div class="main">
 											<ul>
-												<li class="row">
+												<li class="row" v-for="(item,index) in gamelist" :key="index">
 													<div class="col-md-3 tiel">
 														<i></i>
-														<span>11-22 19:00</span>
+														<span>{{item.begin_time}}</span>
 													</div>
 													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
+														<div class="stage">
+															{{item.match_stage}}
 														</div>
 														<div>
-															BO3
+															{{item.bo}}
 														</div>
 													</div>
 													<div id="" class="col-md-5 flx">
 														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
+															{{item.team_a.name}}
+															<img :src="item.team_a.icon" alt="">
+															<i>-vs-</i>
+															<img :src="item.team_b.icon" alt="">
+															{{item.team_b.name}}
 														</div>
 													</div>
 													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
+														<div @click="$router.push('/analyze/'+item.game_id)"><a href="javascript:;">分析</a></div>
+														<div><a href="javascript:;">数据</a></div>
 													</div>
 												</li>
-												<li class="row">
-													<div class="col-md-3 tiel">
-														<i></i>
-														<span>11-22 19:00</span>
-													</div>
-													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
-														</div>
-														<div>
-															BO3
-														</div>
-													</div>
-													<div id="" class="col-md-5 flx">
-														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
-														</div>
-													</div>
-													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
-													</div>
-												</li>
-												<li class="row">
-													<div class="col-md-3 tiel">
-														<i></i>
-														<span>11-22 19:00</span>
-													</div>
-													<div class="col-md-2 flx">
-														<div>
-															kpl春季赛
-														</div>
-														<div>
-															BO3
-														</div>
-													</div>
-													<div id="" class="col-md-5 flx">
-														<div class="ag">
-															AG超会玩
-															<span></span>
-															<i>-</i>
-															<span></span>
-															AG超会玩
-															
-														</div>
-													</div>
-													<div class="col-md-2 flx">
-														<div><a href="">分析</a></div>
-														<div><a href="">数据</a></div>
-													</div>
-												</li>
+												
 											</ul>
 										</div>
 									</div>
@@ -666,7 +557,7 @@
 			</div>
 	<!-- footer -->
 			
-	<footer-bar/>
+			<footer-bar/>
 		</div>
  </div>
 </template>
@@ -675,25 +566,33 @@
 import qs from 'qs';
 import $ from 'jquery';
 import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import HeaderBar from "../components/header";
-import FooterBar from '../components/footer';
+import HeaderBar from '../components/Header.vue';
+import FooterBar from '../components/Footer.vue';
 import { color } from '../js/echarts';
 
 export default {
  data(){
    return{
-	   secret:'',
-	   key:'',
-	   time:''
+	gamelist:[]
    }
  },
  created(){
-	this.getgame();
+	 this.getgamelist();
  },
  mounted(){
 	 this.initswiper();
  },
  methods:{
+	 async getgamelist(){
+		 const obj={
+			'resource':'game',
+			'func':'lists',
+			'event_id':11
+		}
+		const {data:res}=await this.$axios.post(`/sign`,qs.stringify(obj));
+		this.gamelist=res.data.data.slice(0,3);
+		// console.log(this.gamelist);//114
+	 },
 	initswiper(){
 		var swiper = new Swiper('.swiper-container', {
 			autoplay:true,
@@ -707,34 +606,8 @@ export default {
 			},
 		});
 	},
-	async getgame(){
-		this.secret=this.$store.state.app_secret;
-		this.key=this.$store.state.app_key;
-		this.time=Math.floor(this.$store.state.timestamp/1000);
-		console.log(this.secret);
-		console.log(this.key);
-		console.log(this.time);// 'url':`app_key&app_secret&func=events&resource=event&timestamp`,
-		const agrs={
-                'app_key':'',
-                'app_secret':'',
-                'func':'events',
-                'resource':'event',
-                'timestamp':'',
-            }
-		// console.log(args);
-		// const {data:aa}=await this.$axios.get(`?app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp=${this.time}`)
-		// const {data:aa}=await this.$axios.get(`?app_key=${this.key}&app_secret=${this.secret}&func=events&resource=event&timestamp=${this.time}`)
-		const {data:res}=await this.$axios.post(`http://gaming.prmajors.com/index.php/gaming/index/sign`,qs.stringify(agrs));
-		// const {data:res}=await this.$axios({
-		// 	method:"post",
-		// 	url:`http://gaming.prmajors.com/index.php/gaming/index/sign`,
-		// 	data:qs.stringify(agrs)
-		// });
-		// console.log(qs.stringify(agrs));
-		
-		console.log(res);
-		console.log(123);
-		// console.log(aa);
+	getgame(gid){		
+		this.$router.push('/scoreTime/'+gid);
 	}
  },
  components: {
@@ -758,5 +631,15 @@ ul,ol{
 .indexw100 > div.center6 p{
 	line-height: 45px;
 }
+.main {
+	.notStart .row .flx .ag img{
+	margin: 0 10px;
+	width:15px;
+	height: 15px;
+	}
 
+}
+.left-main .nav .center{
+	cursor: pointer;
+}
 </style>

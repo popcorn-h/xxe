@@ -1,8 +1,7 @@
-<template>
+z<template>
   <div>
     <!-- header -->
     <header-bar />
-
     <div class="indexw100 relative">
       <div class=" center6">
         <div class="container">
@@ -17,7 +16,7 @@
           <div></div>
         </div>
         <div class="mianLogiin">
-          <p>立即注册</p>
+          <p>登录</p>
           <form>
             <ul>
               <li>
@@ -25,7 +24,13 @@
                   <i class="user"></i>
                 </div>
                 <div>
-                  <input type="text" v-model="username" :placeholder="nmsg" @focus="nmsg=''" @blur="holder1"/>
+                  <input
+                    type="text"
+                    :placeholder="telmsg"
+                    v-model="phone"
+                    @focus="telmsg = ''"
+                    @blur="telmsg='请输入手机号'"
+                  />
                 </div>
               </li>
               <li>
@@ -33,53 +38,29 @@
                   <i class="ibg"></i>
                 </div>
                 <div>
-                  <input type="password" v-model="apassword" :placeholder="pmsg" @focus="pmsg=''" @blur="holder2"/>
-                </div>
-              </li>
-              <li>
-                <div class="padd">
-                  <i class="ibg"></i>
-                </div>
-                <div>
-                  <input type="password" v-model="bpassword" :placeholder="ppmsg"  @focus="ppmsg=''" @blur="checkpwd"/>
-                </div>
-              </li>
-              <li>
-                <div class="padd s" style="width: 45px;">
-                  <i
-                    class="fa fa-mobile-phone"
-                    style="color: #fff;font-size: 18px;"
-                  ></i>
-                </div>
-                <div>
-                  <input type="text" v-model="phone" :placeholder="tmsg" @focus="tmsg=''" @blur="holder3"/>
-                </div>
-              </li>
-              <li class="fl1">
-                <div class="flexcenter">
-                  <div style="width: 45px !important;">
-                    <i id="safety1"></i>
-                  </div>
-                  <div class="th25">
-                    <input type="text" placeholder="验证码" />
-                  </div>
-                </div>
-                <div class="w60">
-                  <button @click="getnumber" type="button">获取验证码</button>
+                  <input
+                    type="password"
+                    :placeholder="pwdmsg"
+                    v-model="pwd"
+                    @focus="pwdmsg = ''"
+                    @blur=" pwdmsg='请输入密码'"
+                  />
                 </div>
               </li>
             </ul>
             <div class="flex">
-              <div>
-                <input type="checkbox" name="" id="" value="" @click="Agreement"/>
-              </div>
-              <div >我已阅读并同意<a href="javascript:;">网络服务协议</a></div>
+              <div @click="$router.push('/password')">忘记密码?</div>
             </div>
-            <div class="register-admin">
-              <button @click="toregister" type="button">注册</button>
+            <div class="register-admin login">
+              <button type="button" @click="login">登录</button>
             </div>
             <div class="login">
-              <button type="button" @click="$router.push('/login').catch(err => err)">已有帐号,立即登录</button>
+              <button
+                type="button"
+                @click="$router.push('/register').catch(err => err)"
+              >
+                没有账号,去注册
+              </button>
             </div>
           </form>
         </div>
@@ -90,74 +71,49 @@
   </div>
 </template>
 <script>
-import qs from 'qs';
-import HeaderBar from '../components/Header.vue';
-import FooterBar from '../components/Footer.vue';
+import qs from "qs";
+import HeaderBar from "../components/Header.vue";
+import FooterBar from "../components/Footer.vue";
 
 export default {
   data() {
     return {
-      nmsg:'请输入用户昵称',
-      pmsg:'请输入密码',
-      ppmsg:'请再次输入密码',
-      tmsg:'输入手机号',
-      username:'',
-      apassword:'',
-      bpassword:'',
-      phone:'',
-      choose:false
+      telmsg:'请输入手机号',
+      pwdmsg:'请输入密码',
+      phone: "",
+      pwd: ""
     };
   },
+  created() {
+  },
+  mounted() {},
   methods: {
-    holder1(){
-      this.nmsg='请输入用户昵称';
-    },
-    holder2(){
-      var abpwd=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,10}$/;
-      if(this.apassword=='')return this.pmsg='请输入密码';
-      if(abpwd.test(this.apassword)===false){
-        this.apassword='';
-        alert('密码必须包含大小写字母和数字的组合,6~10位！');
+    async login() {
+      var abtel = /^[1][3,4,5,7,8,9][0-9]{9}$/;
+      var abpwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,10}$/;
+      if (abpwd.test(this.pwd) == false || abtel.test(this.phone) == false) {
+        this.pwd = "";
+        this.phone = "";
+        this.telmsg = "请输入手机号";
+        this.pmsg = "请输入密码";
+        return alert("账号或密码错误！");
       }
-      this.pmsg='请输入密码';
-    },
-    holder3(){
-      var abtel=/^[1][3,4,5,7,8,9][0-9]{9}$/;
-      if(this.phone=='')return this.tmsg='输入手机号';
-      if(abtel.test(this.phone)==false){
-        this.phone='';
-        alert('手机号码输入格式不正确！')
-      }
-      this.tmsg='输入手机号';
-    },
-    checkpwd(){
-      this.ppmsg='请再次输入密码'
-      if(this.apassword.trim().length<0)return alert('请输入密码！')
-      if(this.bpassword !==this.apassword){
-          this.bpassword='';
-          alert('密码输入不一致！请重新输入！');
-      }
-    },
-    Agreement(e){
-      console.log(e.target.checked);
-      this.choose=e.target.checked;
-    },
-    async toregister(){
-      if(this.choose==false)return alert('请选中同意网络服务协议！');
-       const userinfo={
+      console.log(123);
+      const info={
         'phone':this.phone,
-        'password':this.bpassword,
-        'nickname':this.username
+        'password':this.pwd
       }
-      const {data:res}=await this.$axios.post('http://gaming.prmajors.com/index.php/gaming/user/registered',qs.stringify(userinfo))
-      if(res.code==0)return alert(res.msg);
-      if(res.code==10)return alert(res.msg);
-      alert('注册成功！')
+      const {data:res}= await this.$axios.post('http://gaming.prmajors.com/index.php/gaming/user/login',qs.stringify(info))
       console.log(res);
-    },
-    getnumber(){
-       
-
+      const userInfo={
+        nickname:res.data.nickname,
+        phone:res.data.phone,
+        avatar:res.data.avatar
+      }
+      window.localStorage.setItem('token',res.data.token);
+      window.localStorage.setItem('userinfo',JSON.stringify(userInfo));
+      if(res.code==0)return alert(res.msg);
+      if(res.code==1)return this.$router.push('/maCenter');
     }
   },
   components: {
@@ -194,15 +150,10 @@ export default {
   /*background: #3A3D40;*/
 }
 .min-height500 > div:first-child > div {
-  width: 580px;
-  margin: 50px auto;
-  height: 570px;
+  height: 450px;
   background: #384f63;
-  margin: 80px auto;
+  margin: 130px auto;
   width: 400px;
-  padding: 30px 20px;
-  width: 500px;
-  margin: 50px auto;
   color: #fff;
   min-height: 300px;
   z-index: 9999;
@@ -295,8 +246,9 @@ export default {
   width: 70%;
 }
 form .flex {
-  display: flex;
+  float: right;
   color: #fff;
+  margin: 10px 5px;
 }
 form .flex > div:last-child {
   margin-left: 10px;
@@ -338,5 +290,11 @@ form .flex > div:first-child {
 }
 .herad .navbar {
   margin: 0 !important;
+}
+.flex div{
+  cursor: pointer;
+}
+.flex div:hover{
+  color: #1aa1d3;
 }
 </style>

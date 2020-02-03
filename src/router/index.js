@@ -8,6 +8,15 @@ import Regard from "../views/regard.vue";
 import Recommend from "../views/recommend.vue";
 import Professional from "../views/professional.vue";
 import Password from "../views/password.vue";
+import Affirmpwd from '../views/affirmpwd.vue';
+import AnalyzeCs from '../views/analyzeCs.vue';
+import Analyze from '../views/analyze.vue';
+import ImgLive from '../views/imgLive.vue';
+import LeagueDetails from '../views/leagueDetails.vue';
+import LiveData from '../views/liveData.vue';
+import MaCenter from '../views/maCenter.vue';
+import ParticularsTeam from '../views/particularsTeam.vue';
+import Login from '../views/login.vue';
 
 
 Vue.use(VueRouter);
@@ -16,16 +25,57 @@ const routes = [
   { path:"/",redirect:'/index'},
   { path: "/index",name:"Index",component: Index},
   { path: "/teamdetails",name:"Teamdetails",component: Teamdetails},
-  { path: "/scoreTime",name:"ScoreTime",component: ScoreTime},
+  { path: "/scoreTime/:gid",name:"ScoreTime",component: ScoreTime},
   { path: "/register",name:"Register",component: Register},
   { path: "/regard",name:"Regard",component: Regard},
   { path: "/recommend",name:"Recommend",component: Recommend},
   { path: "/professional",name:"Professional",component: Professional},
   { path: "/password",name:"password",component: Password},
-];
-
+  { path: "/login",name:"login",component: Login},
+  {
+    path:'/affirmpwd',
+    name:'affirmpwd',
+    component:Affirmpwd
+  },
+  {
+    path:'/analyzeCs',
+    name:'analyzeCs',
+    component:AnalyzeCs
+  },
+  {
+    path:'/analyze/:gid',
+    name:'analyze',
+    component:Analyze
+  },
+  {
+    path:'/imgLive',
+    name:'imgLive',
+    component:ImgLive
+  },
+  {
+    path:'/leagueDetails',
+    name:'leagueDetails',
+    component:LeagueDetails
+  },
+  {
+    path:'/liveData/:gid',
+    name:'liveData',
+    component:LiveData
+  },
+  {
+    path:'/maCenter',
+    name:'maCenter',
+    component:MaCenter
+  },
+  {
+    path:'/particularsTeam',
+    name:'particularsTeam',
+    component:ParticularsTeam
+  }
+]
 
 const router = new VueRouter({
+  mode:"history",
   routes
 });
 
@@ -36,7 +86,10 @@ router.beforeEach((to,from,next)=>{
   // if(to.path==='/login')return next();
   // const tkstr=window.localStorage.getItem('token');
   // if(!tkstr) return next('/login');
-  
+  if(to.path==='/maCenter'){
+    const token=window.localStorage.getItem('token');
+    if(!token)return next('/login');
+  }
   next();
 })
 

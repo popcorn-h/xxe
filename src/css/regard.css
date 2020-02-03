@@ -16,9 +16,7 @@ ul,ol{
 	opacity: 0.4;
 	z-index: -2;
 }
-.reg-left .ls{
-	
-}
+
 .reg-left li{
 	margin: 5px auto;
 	line-height: 35px;
@@ -42,16 +40,12 @@ ul,ol{
 	background: #4AA4DD;
 	border: none;
 }
-.reg-left li>div.active{
-	
-}
+
 
 p{
 	margin: 0;
 	padding: 0;
 }
-
-
 
 .regard .reg-right{
 	width: 80%;
@@ -61,7 +55,6 @@ p{
 }
 .reg-right .reg>div:first-child{
 	width: 100%;
-	
 	height: 100%;
 	opacity: 0.5;
 	z-index: -2;

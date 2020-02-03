@@ -52,24 +52,11 @@
 						</div>
 					</div>
 					<div class="yq">
-						<div class="addc-blue">
-						联系方式：
-						</div>
-						<div class="outside">
-							<ul>
-								<li>
-									<a href="">斗鱼直播</a>
-								</li>
-								<li>
-									<a href="">斗鱼直播</a>
-								</li>
-								<li>
-									<a href="">斗鱼直播</a>
-								</li>
-								
-							</ul>
+						<div class="addc-blue" @click="$router.push('/regard')">
+							关于我们
 						</div>
 					</div>
+					
 					
 				</div>
 				<div class="container2" style="padding: 20px 0;">
@@ -85,10 +72,11 @@ export default {
     data(){
     return{}
     },
-    methods:{}
+    methods:{
+	}
 }
 </script>
-<style lang='less' scoped>
+<style lang='less'>
 @import '../css/carouse.css';
 @import '../css/font-awesome.min.css';
 @import '../css/swiper.min.css';
